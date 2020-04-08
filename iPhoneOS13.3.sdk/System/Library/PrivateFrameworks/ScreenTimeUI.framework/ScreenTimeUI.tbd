@@ -1,0 +1,39 @@
+---
+archs:                 [ armv6, armv7, armv7s, arm64 ]
+platform:              ios-simulator
+install-name:          "/System/Library/PrivateFrameworks/ScreenTimeUI.framework/ScreenTimeUI"
+current-version:       410
+compatibility-version: 1
+exports:
+  - archs:                [ armv6, armv7, armv7s, arm64 ]
+    allowed-clients:      [ ChatKit, ChatKitTests, ContactsUI, FamilyCircleUI, IMCore,
+                            InCallService, LockoutUI, MobileSMS, MobileSafari,
+                            MobileSafariSettings, SafariServices, SafariShared,
+                            SafariSharedUnitTests, ScreenTimeAgent,
+                            ScreenTimeNotificationContentExtension,
+                            ScreenTimeSettings, ScreenTimeUI, ScreenTimeUnlock,
+                            ScreenTimeWidget, Tests, screentimetool ]
+    symbols:              [ _STNotificationKeyPINSuccess,
+                            _STPINRemoteViewControllerInterface,
+                            _STPINServiceViewControllerInterface,
+                            _STRestrictionsPINControllerDidFinishNotification,
+                            _STSharedServicesScreenTimeSpecifierId, _STUIBundle,
+                            _STUISortedAvailableCategoriesExcludingSystemCategories ]
+    objc-classes:         [ _STAllowance, _STAlwaysAllowList, _STCandyBarView,
+                            _STChildSetupController, _STDeviceBedtime,
+                            _STDeviceUnlockStateListener,
+                            _STFamilyCircleSpecifierProvider,
+                            _STHorizontallySegmentedView, _STKeyValuePair,
+                            _STListViewController,
+                            _STLockoutRestrictionsPINController,
+                            _STLockoutViewController, _STPINListViewController,
+                            _STPINRemoteViewController, _STRootViewController,
+                            _STRootViewModelCoordinator, _STScreenTimeUIBundle,
+                            _STSegmentItem, _STSetupAssistantViewController,
+                            _STUILog, _STUIUser, _STUnlockForContentView,
+                            _STUsageDetailsViewModelCoordinator,
+                            _STUsageGraphViewController, _STUsageItem,
+                            _STUsageReport, _STUsageSummaryTitleView,
+                            _STWeeklyReportAppUsageView,
+                            _STWeeklyReportViewController ]
+...

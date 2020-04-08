@@ -1,0 +1,38 @@
+---
+archs:                 [ armv6, armv7, armv7s, arm64 ]
+platform:              ios-simulator
+install-name:          "/System/Library/PrivateFrameworks/RemoteManagement.framework/RemoteManagement"
+current-version:       2
+compatibility-version: 1
+exports:
+  - archs:                [ armv6, armv7, armv7s, arm64 ]
+    allowed-clients:      [ AccountMailExtension, AppManagementExtension,
+                            DeviceLockScreenMessageExtension,
+                            DeviceNameExtension, ManagementTestExtension,
+                            NetworkWiFiExtension, PasscodeSettingsExtension,
+                            RemoteManagementAccountsNotificationPlugin,
+                            RemoteManagementTests, SystemCameraExtension,
+                            WebClipExtension, remotemanagementd, rmdctl, rmdsimctl ]
+    symbols:              [ _RMAssetTypeAppStoreApp, _RMAssetTypeEnterpriseApp,
+                            _RMAssetTypeImage, _RMConfigurationTypeAccountMail,
+                            _RMConfigurationTypeApplicationManagement,
+                            _RMConfigurationTypeDeviceLockScreenMessage,
+                            _RMConfigurationTypeDeviceName,
+                            _RMConfigurationTypeManagementTest,
+                            _RMConfigurationTypeNetworkWiFi,
+                            _RMConfigurationTypePasscodeSettings,
+                            _RMConfigurationTypeSystemCamera,
+                            _RMConfigurationTypeWebClip, _RMErrorDomain,
+                            _RMHTTPStatusCodeKey, _RMStatusTypeDeviceName,
+                            _RMXPCMachServiceName ]
+    objc-classes:         [ _RMAsset, _RMAssetResolver, _RMBundle, _RMConfiguration,
+                            _RMConfigurationAccount, _RMConfigurationRepository,
+                            _RMConfigurationSubscription, _RMErrorUtilities,
+                            _RMExtensionConfigurationSubscriber,
+                            _RMExtensionContext, _RMExtensionRequestHandler,
+                            _RMExtensionStatusPublisher, _RMLog, _RMPolicy,
+                            _RMPolicyStore, _RMResolvedAsset, _RMResolvedDataAsset,
+                            _RMResolvedFileAsset, _RMUnresolvedDataAsset,
+                            _RMUnresolvedFileAsset, _RMXPCProxy,
+                            _RemoteManagement_Subsystem ]
+...
